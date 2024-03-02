@@ -19,4 +19,5 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('slides_app/', include('slides_app.urls', namespace='slides_app')),
 ]
