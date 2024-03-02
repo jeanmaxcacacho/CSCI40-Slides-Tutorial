@@ -16,8 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from slides_app.views import TaskListView, TaskDetailView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('slides_app/', include('slides_app.urls', namespace='slides_app')),
+    path('list', TaskListView.as_view(), name='list'),
+    path('<int:id>/detail', TaskDetailView.as_view(), name='task-detail')
 ]

@@ -5,3 +5,4 @@
 - I want to understand how urls work, everything else kinda makes sense
 ## Saturday March 2, 2024
 - Templates do not make sense :)
+- They make sense now a little bit more than 6 hours ago
