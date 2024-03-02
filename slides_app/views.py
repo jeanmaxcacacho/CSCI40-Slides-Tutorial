@@ -9,4 +9,5 @@ def index(request):
 
 
 def template_context_view(request):
-    return render(request, 'slides_app/template.html', {'name':'slavery was a choice -Kanye West'})
+    ctx = { 'name': 'slavery was a choice -Kanye West' }
+    return render(request, 'slides_app/template.html', ctx)
